@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --heading-font:3.5rem;
+    --btn-font:1.5rem;
+    --tr-font:1.5rem;
+    --th-font:3.5rem;
+}
+
+.addnew .btn{
+    font-size: var(--btn-font);
+}
+
+
+td .btn{
+    font-size: var(--btn-font);
+}
+
+
+@media (min-width:300px) and (max-width:600px) {
+    :root{
+    --heading-font:3rem;
+    --btn-font:.7rem;
+    --tr-font:1.2rem;
+    --th-font:.9rem;
+}
+}
+
+
+
+
+.test1{
+    min-height: 0vh;
+    min-width: 90vw;
+    border: solid 1px green;
+} 
+
+.table-striped tbody tr:nth-child(2n){
+    background-color: rgb(97, 97, 209);
+}
+.table-striped tbody tr:nth-child(2n+1){
+    background-color: rgb(90, 196, 187);
+}
+.table-striped tbody tr td{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--heading-font);
+}
+
+.addnew{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn:hover{
+    transform: translateY(-1rem);
+    transition:all .7s;
+    filter: drop-shadow(1em 1em 1em rgb(33, 58, 12));
+}
+
+.table-striped tbody tr {
+    font-size: var(--tr-font);
+}
+.table-striped tbody th {
+    font-size: var(--th-font);
+}
+
+.table-striped tbody tr:hover{
+    transform: translateY(-1rem);
+    transition:all .7s;
+    filter: drop-shadow(1em 1em 1em rgb(33, 58, 12));
+}
